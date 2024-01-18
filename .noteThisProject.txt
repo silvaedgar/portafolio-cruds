@@ -1,0 +1,28 @@
+1. Este proyecto incluye 3 formas de hacer crud (Con datatable del lado del ciente, del lado del servidor y con paginate el paginate defini un template llamado my-pagination que se encuentra en vendor/pagination).
+    1.1 para el datatable server side vi el video de code with luis hay que instalar la libreria de yajra
+
+2. vendor/pagination se instala publicando la carpeta vendor "php artisan vendor:publish --tag=laravel-pagination"
+
+3. Hay sanitizacion de datos (ejemplo en el request de user. Ese procedimiento(prepareForValidation) sanitiza primero y después valida)
+
+4. Para el QR se instalo el programa Simple QRCode con "composer require simplesoftwareio/simple-qrcode"
+
+5. Los graficos son HighChart gusto el video de informatica DP ver WEB (https://www.highcharts.com/demo/highcharts/column-rotated-labels)
+
+6. El menu del sidebar se encuentra en menu.php de la carpeta config alli se explica como funciona
+
+7. Recordar el uso de Storage para las imagenes. 
+    a) hacer php artisan storage:link  
+    b) El B es para grabar la imagen la forma la tome de https://www.youtube.com/watch?v=8x9UoYCVGGI&t=854s coders free
+        if ($request->hasFile('image')) {  
+            $image = $request->file('image');
+            $image = $request->file('image')->store('public/images/photos');
+            $image = Storage::url($image); 
+        }
+    c) Leer la imagen teoricamente al montar en el servidor solo cambiando el valor de constants.Url debe funcionar este valor se toma desde .env
+        <td> <img src="{{ config('constants.Url') }}{{ $user->image }}" alt=""
+                                    style="height: 50px; width: 50px; object-fit: fill; margin: auto; display: block" />
+                            </td>
+
+8.
+

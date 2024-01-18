@@ -1,0 +1,32 @@
+.table {
+    width: 95%;
+    border: 0px solid black;
+    margin: 10px auto;
+    border-collapse: collapse;
+    max-height: 50vh;
+    padding: 10px 0px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.table th {
+    /* background-color: var(--color-primary); */
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+    width: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+.table tr:hover {
+    background-color: var(--color-primary);
+}
+
+.table td {
+    border: 1px solid black;
+    padding: 3px;
+    width: auto;
+}

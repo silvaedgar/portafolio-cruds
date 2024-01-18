@@ -1,0 +1,81 @@
+/* Clase que contiene los estilos del Modal y Form esta en index-users y index de API */
+
+/* .container-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: blue;
+    } */
+
+.container-image {
+    width: 40%;
+    border: 2px dotted black;
+    padding: 0px 5px 5px 10px;
+}
+
+.container-input {
+    display: flex;
+}
+
+.input-text {
+    width: 70%;
+    padding: 10px 30px 5px 5px;
+}
+
+.container-search {
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.show {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+.select-show {
+    width: 15%;
+    border: 1px solid gray;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border: 1px solid gray;
+}
+
+.btn-icon {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* padding: 1px; */
+    right: 15px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 550px) {
+    .container-search {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .show,
+    .search {
+        width: 80%;
+    }
+
+    .container-image {
+        width: 80%;
+        height: 150px;
+        margin: auto;
+    }
+}
