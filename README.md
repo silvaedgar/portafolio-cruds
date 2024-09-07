@@ -24,5 +24,5 @@ d) Los permisos solo son utilizados en los cruds despues de ejecutar el seeder v
 1. Para instalar la aplicación proceda a clonar el repositorio. <br>
 2. Ejecute la sentencia composer install (instalara todos los paquetes) <br>
 3. Configure el archivo .env a partir del .env.example. <br>
-4. Ejecute las migraciones laravel y el seeder, esto creara la BD y los registros faker de uso.(13 usuarios y roles, 12 niveles de permiso), todos los usuarios se crean con clave 12345678 
+4. Ejecute las migraciones laravel y el seeder, esto creara la BD y los registros faker de uso.(13 usuarios y roles, 12 niveles de permiso), todos los usuarios se crean con clave 12345678
 5. Cree el link para el almacenamiento de las imagenes (php artisan storage:link)

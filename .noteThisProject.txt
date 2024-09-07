@@ -11,18 +11,18 @@
 
 6. El menu del sidebar se encuentra en menu.php de la carpeta config alli se explica como funciona
 
-7. Recordar el uso de Storage para las imagenes. 
-    a) hacer php artisan storage:link  
+7. Recordar el uso de Storage para las imagenes.
+    a) hacer php artisan storage:link
     b) El B es para grabar la imagen la forma la tome de https://www.youtube.com/watch?v=8x9UoYCVGGI&t=854s coders free
-        if ($request->hasFile('image')) {  
+        if ($request->hasFile('image')) {
             $image = $request->file('image');
             $image = $request->file('image')->store('public/images/photos');
-            $image = Storage::url($image); 
+            $image = Storage::url($image);
         }
     c) Leer la imagen teoricamente al montar en el servidor solo cambiando el valor de constants.Url debe funcionar este valor se toma desde .env
         <td> <img src="{{ config('constants.Url') }}{{ $user->image }}" alt=""
                                     style="height: 50px; width: 50px; object-fit: fill; margin: auto; display: block" />
                             </td>
 
-8.
+8. Clone el proyecto el 06/06/24 a un nuevo equipo no funciona el QR de Laravel ni las imagenes hay que revisar
 
