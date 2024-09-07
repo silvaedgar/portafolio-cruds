@@ -1,4 +1,4 @@
-<h2 margin="0 auto">Modulo CRUDs Portafolio</h2>
+<h2 margin="0 auto">Modulo CRUDs de Laravel</h2>
 
 <h3>Modulo que despliega un CRUD de usuario desde 4 perspectivas</h3>
 
