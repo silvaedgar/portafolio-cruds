@@ -1,5 +1,4 @@
-@extends('layouts.app', ['activePage' => $info['activePage'], 'collapse' => $info['collapse'], 'title' => 'Modulo
-Inicial'])
+@extends('layouts.app', ['activePage' => $info['activePage'], 'collapse' => $info['collapse'], 'title' => 'Modulo Inicial'])
 
 @section('content')
 <div class="content">
